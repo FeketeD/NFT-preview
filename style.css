@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-weight: 300;
+    background-color: hsl(217, 54%, 11%);
+    color: hsl(215, 51%, 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+p {
+    font-size: 18px;
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.card-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.equilibrium {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.card-img .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98.7%;
+    display: none;
+    color: #FFF;
+}
+.overlay img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card-img:hover .overlay {
+    display: block;
+    border-radius: 10px;
+    background: hsla(178, 100%, 50%, 0.6);
+    cursor: pointer;
+}
+
+.card-name, .card-desc, .card-info {
+    margin: 20px 0;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.price {
+    color: hsl(178, 100%, 50%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.price img {
+    width: 10px;
+    margin-right: 5px;
+}
+.date {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.date img {
+    width: 18px;
+    margin-right: 5px;
+}
+
+.white {
+    color: hsl(0, 0%, 100%);
+}
+.white:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-top: 25px;
+    padding: 20px 0;
+}
+.card-footer img {
+    margin-right: 20px;
+    width: 35px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+}
